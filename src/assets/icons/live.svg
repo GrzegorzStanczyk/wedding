@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd" width="48" height="48" sodipodi:version=".32" sodipodi:docbase="/home/luca/Desktop" sodipodi:docname="applications-internet.svg">
+  <sodipodi:namedview pagecolor="#ffffff" bordercolor="#666666" borderopacity="1" showgrid="true" showguides="true">
+    <sodipodi:guide orientation="horizontal" position="43.969"/>
+    <sodipodi:guide orientation="vertical" position="4.031"/>
+    <sodipodi:guide orientation="horizontal" position="4.031"/>
+    <sodipodi:guide orientation="vertical" position="44.094"/>
+    <sodipodi:guide orientation="horizontal" position="40"/>
+    <sodipodi:guide orientation="vertical" position="8"/>
+    <sodipodi:guide orientation="horizontal" position="7.937"/>
+    <sodipodi:guide orientation="vertical" position="40.063"/>
+  </sodipodi:namedview>
+  <path sodipodi:type="arc" sodipodi:cx="24" sodipodi:cy="24" sodipodi:rx="24" sodipodi:ry="24" d="M48 24a24 24 0 1 1-48 0 24 24 0 1 1 48 0z" fill="#fff" fill-rule="evenodd"/>
+  <path sodipodi:type="arc" sodipodi:cx="24" sodipodi:cy="24" sodipodi:rx="20" sodipodi:ry="20" d="M44 24a20 20 0 1 1-40 0 20 20 0 1 1 40 0z" fill-rule="evenodd"/>
+  <path sodipodi:type="arc" sodipodi:cx="24" sodipodi:cy="24" sodipodi:rx="16" sodipodi:ry="16" d="M40 24a16 16 0 1 1-32 0 16 16 0 1 1 32 0z" fill="#fff" fill-rule="evenodd"/>
+  <path d="M10 34.25c8-3 20-3 28 0" sodipodi:nodetypes="cc" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+  <path d="M7.97 24h32.06" fill="none" stroke="#000" stroke-width="4"/>
+  <path d="M20 7.55C15 18 15 31 20 41M10 13.75c8 3 20 3 28 0M28 7.55C33 18 33 31 28 41" sodipodi:nodetypes="cc" fill="none" stroke="#000" stroke-width="4" stroke-linecap="round"/>
+</svg>

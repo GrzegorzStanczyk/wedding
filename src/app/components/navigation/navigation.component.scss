@@ -1,0 +1,141 @@
+@keyframes select-move {
+  0% {
+    transform: scale(1, 1);
+  }
+  20% {
+    transform: scale(1, 0.5);
+  }
+  40% {
+    transform: scale(1, 0.5);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(20px);
+  }
+  40% {
+    transform: translateX(-10px);
+  }
+  60% {
+    transform: translateX(5px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes move-left {
+  0% {
+    transform: translateX(0px);
+  }
+  20% {
+    transform: translateX(-20px);
+  }
+  40% {
+    transform: translateX(10px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+  80% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.navigation {
+  filter: url("#goo");
+  width: 100%;
+  max-width: 330px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  bottom: 7%;
+  left: 50%;
+  transform: translateX(-50%);
+  .navigation-link__container {
+    z-index: 100;
+    width: auto;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(253, 251, 251, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &.animate-left {
+      animation: move-left 0.7s ease 0s forwards;
+    }
+    &.animate-right {
+      animation: move-right 0.7s ease 0s forwards;
+    }
+  }
+  a {
+    margin: 5px;
+    padding: 5px;
+    color: #0a0a0a;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+}
+
+.svg-flt {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.active-move {
+  position: absolute;
+  z-index: 10;
+  border-radius: 20%;
+  background-color: rgba(253, 251, 251, 0.8);
+  transition: all 0.5s ease;
+  &.animate {
+    animation: select-move 0.5s ease 0s forwards;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .navigation {
+    bottom: 2%;
+    justify-content: space-around;
+    .navigation-link__container {
+      width: 60px;
+      height: 60px;
+      a {
+        display: block;
+        font-size: 0;
+        width: 65%;
+        height: 65%;
+        margin: 0;
+        background-size: 100%;
+        &[routerLink*="home"] {
+          background: url("/assets/icons/home.svg");
+          background-repeat: no-repeat;
+        }
+        &[routerLink*="projects"] {
+          background: url("/assets/icons/list.svg");
+          background-repeat: no-repeat;
+        }
+        &[routerLink*="contact"] {
+          background: url("/assets/icons/contact.svg");
+          background-repeat: no-repeat;
+        }
+      }
+    }
+  }
+}
