@@ -1,4 +1,10 @@
-<app-navigation></app-navigation>
-<main class="content" [@slideLeftAnimation]="getState(routerOutlet)">
+<!-- <app-navigation></app-navigation> -->
+<main
+  class="content"
+  swipe
+  (swipeUp)="mousewheel($any({ deltaY: 0 }))"
+  (swipeDown)="mousewheel($any({ deltaY: 1 }))"
+  [@slideDownAnimation]="getState(routerOutlet)"
+>
   <router-outlet #routerOutlet="outlet"></router-outlet>
 </main>

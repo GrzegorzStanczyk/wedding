@@ -1,4 +1,4 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 import { HammerModule } from '@angular/platform-browser';
 import { Router } from '@angular/router';
@@ -11,8 +11,9 @@ import { ParticlesDirective } from '../../shared/directives/particles.directive'
   styleUrls: ['./main.component.scss'],
   standalone: true,
   imports: [HammerModule, ParticlesDirective],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MainComponent implements OnInit {
+export class MainComponent {
   public message: string = 'Nasze Wesele Marzeń';
 
   constructor(
@@ -20,11 +21,9 @@ export class MainComponent implements OnInit {
     private navigateService: NavigateService
   ) {}
 
-  @HostListener('document:keydown.ArrowRight')
-  @HostListener('swipeleft')
-  swipe() {
-    this.navigateService.navigateToProjects();
-  }
-
-  ngOnInit() {}
+  // @HostListener('document:keydown.ArrowRight')
+  // @HostListener('swipeleft')
+  // swipe() {
+  //   this.navigateService.navigateToProjects();
+  // }
 }
